@@ -100,7 +100,7 @@ def render() -> None:
                     }
                     for item in history
                 ],
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
             )
         else:

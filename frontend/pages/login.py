@@ -15,7 +15,7 @@ def render() -> None:
         with st.form("login_form"):
             email = st.text_input("Email", placeholder="you@example.com")
             password = st.text_input("Password", type="password")
-            submitted = st.form_submit_button("Sign in", type="primary", use_container_width=True)
+            submitted = st.form_submit_button("Sign in", type="primary", width="stretch")
         if submitted:
             try:
                 result = ApiClient().post(
@@ -38,7 +38,11 @@ def render() -> None:
             languages = st.text_input("Preferred programming language")
             categories = st.text_input("Target company categories", placeholder="product, service")
             goals = st.text_area("Preparation goals")
-            submitted = st.form_submit_button("Create account", type="primary", use_container_width=True)
+            submitted = st.form_submit_button(
+                "Create account",
+                type="primary",
+                width="stretch",
+            )
         if submitted:
             try:
                 ApiClient().post(

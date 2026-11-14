@@ -43,7 +43,7 @@ def render() -> None:
                 }
             )
         if rows:
-            st.dataframe(rows, use_container_width=True, hide_index=True)
+            st.dataframe(rows, width="stretch", hide_index=True)
         else:
             st.info("Complete an assessment or practice activity to build your mastery profile.")
 
@@ -86,7 +86,7 @@ def render() -> None:
                 }
                 for item in assessment_history[:5]
             ],
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
     else:
@@ -103,7 +103,7 @@ def render() -> None:
                 }
                 for item in assessments
             ],
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
         st.caption("Start a benchmark assessment from the Benchmark Assessment page.")

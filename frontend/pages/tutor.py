@@ -13,7 +13,7 @@ def render() -> None:
 
     with st.sidebar:
         st.markdown("### Conversations")
-        if st.button("＋ New conversation", use_container_width=True):
+        if st.button("＋ New conversation", width="stretch"):
             session = api.post("/chat/sessions", json={"title": "Placement tutoring"})
             st.session_state.chat_session_id = session["id"]
             st.rerun()
@@ -45,7 +45,7 @@ def render() -> None:
     ]
     for column, (caption, prompt) in zip(prompt_columns, prompts):
         with column:
-            if st.button(caption, use_container_width=True):
+            if st.button(caption, width="stretch"):
                 st.session_state.tutor_prompt = prompt
     prompt = st.chat_input("Ask your placement tutor...")
     prompt = prompt or st.session_state.pop("tutor_prompt", None)

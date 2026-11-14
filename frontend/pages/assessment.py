@@ -7,6 +7,24 @@ from frontend.components.layout import page_header
 from frontend.services.api_client import get_api_client
 
 
+def _question_count(
+    available_count: int,
+    slider=None,
+) -> int:
+    if available_count <= 0:
+        return 0
+    if available_count == 1:
+        return 1
+    if slider is None:
+        slider = st.slider
+    return slider(
+        "Questions in this benchmark",
+        min_value=1,
+        max_value=available_count,
+        value=min(available_count, 5),
+    )
+
+
 def _clear_assessment() -> None:
     for key in (
         "assessment_attempt_id",
@@ -53,7 +71,7 @@ def _render_result(result: dict) -> None:
                 }
                 for item in result["topic_performance"]
             ],
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
 
@@ -91,7 +109,7 @@ def render() -> None:
     if not questions:
         st.warning("No questions match these filters.")
         return
-    count = st.slider("Questions in this benchmark", 1, len(questions), min(len(questions), 5))
+    count = _question_count(len(questions))
     assessments = api.get("/assessments")
     st.subheader("Start benchmark")
     if st.button("Create and start benchmark", type="primary"):

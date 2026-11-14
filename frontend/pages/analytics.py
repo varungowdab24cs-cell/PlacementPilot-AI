@@ -52,7 +52,7 @@ def render() -> None:
                 }
                 for item in assessments
             ],
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
     else:
@@ -84,7 +84,7 @@ def render() -> None:
             }
             for topic in topics
         ],
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
     )
     timeline = research.get("topic_mastery_history", [])
@@ -99,6 +99,6 @@ def render() -> None:
         if item["score"] is not None
     ]
     if observed_timeline:
-        st.dataframe(observed_timeline, use_container_width=True, hide_index=True)
+        st.dataframe(observed_timeline, width="stretch", hide_index=True)
     else:
         st.info("No sufficient mastery snapshots are available yet.")
