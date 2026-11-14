@@ -1,0 +1,127 @@
+[
+  {
+    "subject": "Quantitative Aptitude",
+    "topic": "Percentages",
+    "question": {
+      "prompt": "A value increases from 80 to 100. What is the percentage increase?",
+      "options": ["20%", "25%", "30%", "40%"],
+      "correct_answer": "25%",
+      "difficulty": "easy",
+      "explanation": "The increase is 20, and 20 / 80 * 100 equals 25%.",
+      "estimated_solving_time_seconds": 45
+    }
+  },
+  {
+    "subject": "Logical Reasoning",
+    "topic": "Number Series",
+    "question": {
+      "prompt": "What is the next number in the series 2, 4, 8, 16?",
+      "options": ["20", "24", "32", "36"],
+      "correct_answer": "32",
+      "difficulty": "easy",
+      "explanation": "Each term is twice the previous term.",
+      "estimated_solving_time_seconds": 30
+    }
+  },
+  {
+    "subject": "Verbal Ability",
+    "topic": "Grammar",
+    "question": {
+      "prompt": "Choose the grammatically correct sentence.",
+      "options": [
+        "She have completed the task.",
+        "She has completed the task.",
+        "She completing the task.",
+        "She has complete the task."
+      ],
+      "correct_answer": "She has completed the task.",
+      "difficulty": "easy",
+      "explanation": "The singular subject 'she' takes 'has' in the present perfect tense.",
+      "estimated_solving_time_seconds": 50
+    }
+  },
+  {
+    "subject": "C Programming",
+    "topic": "Pointers",
+    "question": {
+      "prompt": "Which operator dereferences a pointer in C?",
+      "options": ["&", "*", "->", "%"],
+      "correct_answer": "*",
+      "difficulty": "easy",
+      "explanation": "The unary * operator accesses the value stored at a pointer's address.",
+      "estimated_solving_time_seconds": 35
+    }
+  },
+  {
+    "subject": "C++",
+    "topic": "Object-Oriented Programming",
+    "question": {
+      "prompt": "Which feature allows a derived class to provide a specific implementation of a base-class method?",
+      "options": ["Encapsulation", "Overloading", "Overriding", "Abstraction"],
+      "correct_answer": "Overriding",
+      "difficulty": "medium",
+      "explanation": "Method overriding replaces an inherited method implementation.",
+      "estimated_solving_time_seconds": 45
+    }
+  },
+  {
+    "subject": "Java",
+    "topic": "Collections",
+    "question": {
+      "prompt": "Which Java collection does not allow duplicate elements?",
+      "options": ["ArrayList", "LinkedList", "HashSet", "Vector"],
+      "correct_answer": "HashSet",
+      "difficulty": "easy",
+      "explanation": "Set implementations represent collections of unique elements.",
+      "estimated_solving_time_seconds": 35
+    }
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "topic": "Complexity Analysis",
+    "question": {
+      "prompt": "What is the average time complexity of binary search on a sorted array?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+      "correct_answer": "O(log n)",
+      "difficulty": "easy",
+      "explanation": "Binary search halves the remaining search interval on each comparison.",
+      "estimated_solving_time_seconds": 40
+    }
+  },
+  {
+    "subject": "DBMS and SQL",
+    "topic": "SQL Queries",
+    "question": {
+      "prompt": "Which SQL clause filters rows after grouping?",
+      "options": ["WHERE", "GROUP BY", "HAVING", "ORDER BY"],
+      "correct_answer": "HAVING",
+      "difficulty": "medium",
+      "explanation": "HAVING filters groups produced by GROUP BY.",
+      "estimated_solving_time_seconds": 45
+    }
+  },
+  {
+    "subject": "Operating Systems",
+    "topic": "Processes",
+    "question": {
+      "prompt": "Which scheduling algorithm uses a fixed time quantum?",
+      "options": ["FCFS", "SJF", "Round Robin", "Priority"],
+      "correct_answer": "Round Robin",
+      "difficulty": "easy",
+      "explanation": "Round Robin assigns each ready process a fixed time slice.",
+      "estimated_solving_time_seconds": 40
+    }
+  },
+  {
+    "subject": "Analysis and Design of Algorithms",
+    "topic": "Greedy Algorithms",
+    "question": {
+      "prompt": "Which algorithmic strategy makes the best local choice at each step?",
+      "options": ["Divide and conquer", "Greedy", "Backtracking", "Dynamic programming"],
+      "correct_answer": "Greedy",
+      "difficulty": "easy",
+      "explanation": "Greedy algorithms select the best immediate option at each step.",
+      "estimated_solving_time_seconds": 30
+    }
+  }
+]

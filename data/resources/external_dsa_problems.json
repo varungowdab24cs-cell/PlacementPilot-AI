@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Two Sum",
+    "platform": "leetcode",
+    "subject": "Data Structures and Algorithms",
+    "topic": "Arrays",
+    "difficulty": "easy",
+    "official_url": "https://leetcode.com/problems/two-sum/",
+    "description": "Find two array values whose sum equals a target.",
+    "prerequisite_topics": ["Complexity Analysis"],
+    "recommended_company_categories": ["product", "startup"]
+  },
+  {
+    "title": "Binary Tree Inorder Traversal",
+    "platform": "leetcode",
+    "subject": "Data Structures and Algorithms",
+    "topic": "Trees",
+    "difficulty": "easy",
+    "official_url": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+    "description": "Return the inorder traversal of a binary tree.",
+    "prerequisite_topics": ["Recursion"],
+    "recommended_company_categories": ["product", "service"]
+  },
+  {
+    "title": "Array and Operations",
+    "platform": "codeforces",
+    "subject": "Data Structures and Algorithms",
+    "topic": "Arrays",
+    "difficulty": "medium",
+    "official_url": "https://codeforces.com/problemset/problem/1/B",
+    "description": "Practice array manipulation and implementation techniques.",
+    "prerequisite_topics": ["Complexity Analysis"],
+    "recommended_company_categories": ["service", "product"]
+  },
+  {
+    "title": "Shortest Path Practice",
+    "platform": "codeforces",
+    "subject": "Data Structures and Algorithms",
+    "topic": "Graphs",
+    "difficulty": "hard",
+    "official_url": "https://codeforces.com/problemset/problem/20/C",
+    "description": "Practice shortest-path reasoning on a weighted graph.",
+    "prerequisite_topics": ["Complexity Analysis"],
+    "recommended_company_categories": ["product", "research"]
+  }
+]

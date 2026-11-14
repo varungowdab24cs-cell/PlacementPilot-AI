@@ -10,6 +10,7 @@ cloudpickle==3.1.2
 colorama==0.4.6
 distro==1.9.0
 fastapi==0.162.4
+email-validator==2.3.0
 filelock==4.2.10
 fsspec==2026.9.0
 groq==1.7.0
@@ -36,6 +37,7 @@ networkx==3.7
 numpy==2.5.4
 opentelemetry-api==1.45.2
 packaging==26.3
+PyJWT==2.10.1
 pandas==3.1.1
 pillow==13.0.0
 pluggy==1.7.0
@@ -44,6 +46,7 @@ pyarrow==26.0.1
 pydantic==2.14.3
 pydantic-settings==2.16.2
 pydantic_core==2.50.4
+pwdlib[argon2]==0.2.1
 pydeck==0.9.3
 Pygments==2.21.0
 pytest==9.2.0

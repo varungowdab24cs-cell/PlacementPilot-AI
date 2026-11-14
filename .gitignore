@@ -1,15 +1,41 @@
+# Virtual environments
 .venv/
+venv/
+env/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.key
+*.pem
+
+# Python caches and test artifacts
 __pycache__/
 *.py[cod]
-
-.env
-*.db
-
 .pytest_cache/
 .mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+htmlcov/
 
-.vscode/
-.streamlit/secrets.toml
-
-models/
+# Local databases and logs
+*.db
+*.sqlite
+*.sqlite3
 *.log
+
+# Generated model files
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# IDE and OS files
+.vscode/
+.DS_Store
